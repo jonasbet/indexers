@@ -4,12 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Indexers
 {
+
+
     class Program
     {
         static void Main(string[] args)
         {
+            var cookie = new HttpCookie();
+            cookie["name"] = "Jonas";
+            Console.WriteLine(cookie["name"]);
+            Console.ReadKey();
         }
     }
 }
